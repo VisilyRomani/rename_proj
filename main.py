@@ -26,10 +26,12 @@ def numberCheck():
     for files in os.listdir(path):
         if files[0:3] == "DSC":
             if sel == 1:
-                fileDest = letter + str(i) + ".jpg"
-            fileSource = path / files
-            fileDest = path / fileDest
-            os.rename(fileSource, fileDest)
+                file_destination = letter + str(i) + ".jpg"
+            else:
+                file_destination = str(i) + ".jpg"
+            file_source = path / files
+            file_destination = path / file_destination
+            os.rename(file_source, file_destination)
             i = int(i) + 1
 
 
