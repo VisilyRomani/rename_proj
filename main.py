@@ -36,4 +36,4 @@ def numberCheck():
 if __name__ == '__main__':
     numberCheck()
     print("Done")
-    time.sleep(10)
+    time.sleep(5)
